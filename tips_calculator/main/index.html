@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="name">
+      <h1>SPLI</h1>
+      <h1>TTER</h1>
+    </div>
+    <div class="main">
+      <div class="main-left">
+        <h2>Bill</h2>
+        <input class="input" type="number" value="0" />
+        <h2>Select tip</h2>
+        <div>
+          <button class="percent">5%</button>
+          <button class="percent">10%</button>
+          <button class="percent">15%</button>
+          <button class="percent">25%</button>
+          <button class="percent">50%</button>
+          <input id="custom-percent" placeholder="Custom" />
+        </div>
+        <h2>Number of people</h2>
+        <input id="input-people" class="input" type="number" value="0" />
+      </div>
+      <div class="main-right">
+        <div class="main-tab">
+          <div class="left-tab">
+            <h2>Tip Amount</h2>
+          </div>
+          <div class="right-tab"><div class="amount">0.00</div>
+        </div>          
+      </div>
+      <div class="main-tab">
+        <div class="left-tab">
+          <h2>Total</h2>
+        </div>
+        <div class="right-tab"><div class="amount">0.00</div>
+      </div>          
+    </div>
+      <button id="button">RESET</button>
+    </div>
+  </body>
+</html>

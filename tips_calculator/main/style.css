@@ -1,0 +1,187 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: block;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+}
+.name {
+  margin-top: 130px;
+  margin-bottom: 37px;
+}
+h1 {
+  color: hsl(183, 100%, 15%);
+  margin: auto;
+}
+
+.main {
+  height: 476px;
+  width: 909px;
+  background-color: hsl(0, 0%, 100%);
+  margin: auto;
+  display: flex;
+  border-radius: 25px;
+}
+
+.main-left {
+  width: 374px;
+  height: 383px;
+  margin: auto;
+}
+
+#button {
+  width: 329px;
+  height: 47.5px;
+  position: absolute;
+  bottom: 39px;
+  left: 39px;
+  border-radius: 5px;
+  background-color: hsl(172, 67%, 45%);
+  color: rgba(0, 71, 75, 1);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+#button:hover {
+  background-color: #9fe8df;
+}
+.main-left {
+  text-align: left;
+}
+.main-left h2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(94, 122, 125, 1);
+}
+
+.input {
+  height: 48px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 24px;
+  color: rgba(0, 71, 75, 1);
+  background-image: URL("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10px;
+}
+
+.percent {
+  width: 117px;
+  height: 48px;
+  background-color: rgba(0, 71, 75, 1);
+  border-radius: 5px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+.percent:hover,
+.percent:active {
+  background-color: rgba(159, 232, 223, 1);
+  color: rgba(0, 71, 75, 1);
+}
+
+#custom-percent {
+  width: 114px;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  color: rgba(84, 120, 120, 1);
+}
+#custom-percent::placeholder {
+  color: rgba(84, 120, 120, 1);
+}
+#custom-percent:hover,
+#custom-percent:active {
+  border: solid #9fe8df;
+}
+input:hover,
+input:active {
+  border: solid #9fe8df;
+}
+#input-people {
+  background-image: url("./images/icon-person.svg");
+  background-position: 10px;
+}
+.main-right {
+  background-color: hsl(183, 100%, 15%);
+  width: 413px;
+  height: 417px;
+  margin: auto;
+  position: relative;
+  border-radius: 8px;
+}
+
+.main-tab {
+  margin-top: 40px;
+  width: calc(100% - 40px);
+  height: 71px;
+  display: block;
+}
+.left-tab {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  width: 40%;
+  text-align: left;
+  float: left;
+  padding-left: 30px;
+}
+.right-tab {
+  float: right;
+  width: 40%;
+  margin: auto;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: right;
+  background: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 15%;
+
+  color: rgba(38, 194, 174, 1);
+}
+
+@media (max-width: 375px) {
+  body {
+    margin: 0px;
+  }
+  .name {
+    margin: 25px;
+  }
+  .main {
+    width: 100%;
+    display: block;
+  }
+  .main-left {
+    width: auto;
+    margin: 10px;
+  }
+  .percent {
+    width: calc(45%);
+  }
+
+  #custom-percent {
+    width: cacl(45%);
+  }
+
+  .main-right {
+    height: 300px;
+    width: auto;
+  }
+  .right-tab {
+    background-image: none;
+  }
+
+  #button {
+    width: 80%;
+    margin: auto;
+  }
+}
